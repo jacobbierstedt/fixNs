@@ -3,11 +3,11 @@ Adjust size of gaps in genomic sequence to a fixed sized based on gaps identifie
 
 The purpose of this program is to adjust a predetermined set of gaps in a genome sequence to a fixed size (i.e. set the length of unknown gaps to 100 bp for NCBI submission). 
 
-It takes two arguments: 
+It takes two positional arguments: 
 1) a single-line sequence file (one line, one scaffold, no fasta header)
 2) a 4-column sorted bed file containing the intervals for the gaps on the scaffold (chr, start, stop, name). 
  
-The corrected sequence is written to stdout. Recommended usage would be splitting your genome into a single file (no header) per scaffold, and splitting or creating a bed file with the same basename corresponding to the gaps on that scaffold and passing them as arguments. 
+The corrected sequence is written to stdout. It is recommended to split your genome into a single file (no header) per scaffold, and split or create a bed file with the same basename corresponding to the gaps on that scaffold and passing them as arguments to fixNs. 
 
 
 

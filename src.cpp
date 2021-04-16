@@ -68,7 +68,6 @@ int calculateAdjustment(seq ss, gapBed gb)
     tadj = (ss.newfa.size() - ss.fasta.size());
     i++;
   }
-std::cout << ss.fasta << std::endl;
 std::cout << ss.newfa << std::endl;
 std::cout << "Adjustment: \t" << tadj << std::endl;
   return tadj;

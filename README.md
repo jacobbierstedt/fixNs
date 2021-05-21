@@ -7,7 +7,7 @@ It takes two positional arguments:
 1) a single-line sequence file (one line, one scaffold, no fasta header)
 2) a 4-column sorted bed file containing the intervals for the gaps on the scaffold (chr, start, stop, name). 
  
-The corrected sequence is written to stdout. It is recommended to split your genome into a single file (no header) per scaffold, and split or create a bed file with the same basename corresponding to the gaps on that scaffold and passing them as arguments to fixNs. 
+The corrected sequence is written to stdout. It is recommended to split your genome into a single file per scaffold (no header), and split or create a bed file with the same basename corresponding to the gaps on that scaffold and passing them as arguments to fixNs. 
 
 
 
